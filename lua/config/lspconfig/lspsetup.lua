@@ -1,7 +1,6 @@
 local lspconfig = require("lspconfig")
 
 lspconfig.rust_analyzer.setup {
-	cmd = {"/home/user/.cargo/bin/rust-analyzer"},
 	settings = {
 		['rust-analyzer'] = {},
 	},
