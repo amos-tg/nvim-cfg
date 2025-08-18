@@ -10,7 +10,10 @@ map("c", "jk", "<ESC>")
 map("t", "jk", "<C-\\><C-N>")
 
 -- terminal binds
-map("n", "<leader>te", "<cmd>te<CR>") 
+map("n", "<leader>te", "<cmd>te<CR>")
+
+-- tab binds
+map("n", "<leader>tb", "<cmd>tabnew<CR>")
 
 -- buffer binds
 map("n", "<leader>s", "<cmd>split<CR>")
