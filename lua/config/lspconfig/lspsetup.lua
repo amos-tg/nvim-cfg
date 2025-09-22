@@ -1,21 +1,23 @@
-local lspconfig = require("lspconfig")
-
-lspconfig.rust_analyzer.setup {
+vim.lsp.config('rust_analyzer', {
 	settings = {
 		['rust-analyzer'] = {},
 	},
-}
+})
 
-lspconfig.lua_ls.setup {
+vim.lsp.enable('rust_analyzer')
+
+vim.lsp.config('lua_ls', {
 	settings = {
 		Lua = {},
 		cmd = { "lua-language-server" },
 		filetypes = { "lua" },
 		single_file_support = true,
 	}
-}
+})
 
-lspconfig.bashls.setup {
+vim.lsp.enable('lua_ls')
+
+vim.lsp.config('bashls', {
 	settings = {
 		cmd = { "bash-language-server", "start" },
 		filetypes = { "bash", "sh" },
@@ -24,9 +26,11 @@ lspconfig.bashls.setup {
 		},
 		single_file_support = true,
 	}
-}
+})
 
-lspconfig.clangd.setup {
+vim.lsp.enable('bashls')
+
+vim.lsp.config('clangd', {
 	settings = {
 		capabilities = {
     	offsetEncoding = { "utf-8", "utf-16" },
@@ -40,9 +44,11 @@ lspconfig.clangd.setup {
 		filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "proto" },
 		single_file_support = true,
 	}
-}
+})
 
-lspconfig.yamlls.setup {
+vim.lsp.enable('clangd')
+
+vim.lsp.config('yamlls', {
 	settings = {
 		redhat = {
     	telemetry = {
@@ -51,4 +57,6 @@ lspconfig.yamlls.setup {
 		},
 		filetype = { "yaml", "yaml.docker-compose", "yaml.gitlab" },
 	}
-}
+})
+
+vim.lsp.enable('yamlls')
