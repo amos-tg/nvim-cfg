@@ -1,3 +1,5 @@
+vim.lsp.enable('cmake')
+
 vim.lsp.config('rust_analyzer', {
 	settings = {
 		['rust-analyzer'] = {},
