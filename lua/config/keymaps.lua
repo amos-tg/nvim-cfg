@@ -1,5 +1,8 @@
 local map = vim.keymap.set
 -- general bindings :
+-- add whitespace in normal mode without exiting
+map("n", "<leader>o", "o<ESC>")
+map("n", "<leader>O", "O<ESC>")
 
 -- ergonomic exiting
 map("i", "jk", "<ESC>")
