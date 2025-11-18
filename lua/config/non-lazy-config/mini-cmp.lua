@@ -15,7 +15,7 @@ require('mini.completion').setup({
  	-- Way of how module does LSP completion
  	lsp_completion = {
  	  -- `source_func` should be one of 'completefunc' or 'omnifunc'.
- 	  source_func = 'completefunc',
+ 	  source_func = 'omnifunc',
 
  	  -- `auto_setup` should be boolean indicating if LSP completion is set up
  	  -- on every `BufEnter` event.
@@ -43,13 +43,18 @@ require('mini.completion').setup({
  	mappings = {
  	  -- Force two-step/fallback completions
  	  force_twostep = '<C-Space>',
- 	  force_fallback = '<A-Space>',
+    --
+    -- these seem useful but I don't know what to bind
+    -- them to and I don't use them so I am commenting 
+    -- them out.
+    --
+ 	  --force_fallback = '<C->',
 
  	  -- Scroll info/signature window down/up. When overriding, check for
  	  -- conflicts with built-in keys for popup menu (like `<C-u>`/`<C-o>`
  	  -- for 'completefunc'/'omnifunc' source function; or `<C-n>`/`<C-p>`).
- 	  scroll_down = '<C-j>',
-		scroll_up = '<C-k>',
+ 	  --scroll_down = '<C-o>',
+    --scroll_up = '<C-p>',
  	},
 
  	-- Whether to set Vim's settings for better experience (modifies

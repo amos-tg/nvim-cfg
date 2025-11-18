@@ -8,8 +8,8 @@ return {
 		},
 
 		priority = 1000,
-		lazy = false,
 		opts = {
+      dashboard = {},
 			bigfile = { enabled = true },
 			notifier = { enabled = true },
 			quickfile = { enabled = true },
