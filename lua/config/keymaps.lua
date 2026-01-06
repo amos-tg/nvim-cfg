@@ -45,7 +45,7 @@ map("n", "<leader>L", "<cmd>wincmd L<CR>")
 map("n", "<leader>nh", "<cmd>nohlsearch<CR>")
 
 -- Snacks.explorer bind
-map("n", "<leader>ntw", "<cmd>Neotree<CR>")
+map("n", "<leader>ntw", "<cmd>e ./<CR>")
 
 -- lspbinds
 map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
