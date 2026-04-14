@@ -13,6 +13,7 @@ vim.o.virtualedit = 'all'
 
 -- Theming
 vim.o.background = 'dark'
+vim.o.winborder = 'double'
 
 
 -- Netrw/(File Explorer) 

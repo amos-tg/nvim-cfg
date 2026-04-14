@@ -48,27 +48,3 @@ map("n", "<leader>ntw", "<cmd>e ./<CR>")
 
 -- lspbinds
 map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
-
-
--- telescope binds
-local builtin = require("telescope.builtin")
-
-vim.keymap.set("n", "<leader>ff", function()
-	builtin.find_files({ hidden = true })
-end)
-
-vim.keymap.set("n", "<leader>fF", function()
-	builtin.find_files({ hidden = true, cwd = "/root" })
-end)
-
-vim.keymap.set("n", "<leader>fg", function()
-	builtin.live_grep({ hidden = true })
-end)
-
-vim.keymap.set("n", "<leader>fG", function()
-	builtin.live_grep({ hidden = true, cwd = "/root" })
-end)
-
-vim.keymap.set("n", "<leader>fb", builtin.buffers)
-
-vim.keymap.set("n", "gD", "<cmd>Telescope lsp_definitions<CR>")
