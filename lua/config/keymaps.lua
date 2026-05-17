@@ -1,4 +1,5 @@
 local map = vim.keymap.set
+
 -- general bindings :
 -- add whitespace in normal mode without exiting
 map("n", "<leader>o", "o<ESC>")
@@ -27,6 +28,8 @@ map("n", "<leader>q", "<cmd>q<CR>")
 map("n", "<leader>q!", "<cmd>q!<CR>")
 map("n", "<leader>bd", "<cmd>bd<CR>")
 map("n", "<leader>bd!", "<cmd>bd!<CR>")
+
+map("n", "<leader>B", "<cmd>ls<CR>")
 
 -- cursor mov
 map("n", "<leader>k", "<cmd>wincmd k<CR>")
